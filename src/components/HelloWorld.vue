@@ -1,58 +1,105 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <nav
+      class="navbar container py-2"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="@/assets/logo.png" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start"></div>
+
+        <div class="navbar-end">
+          <a class="navbar-item">
+            Lien 1
+          </a>
+
+          <a class="navbar-item">
+            Lien 2
+          </a>
+          <a class="navbar-item">
+            Lien 3
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero container p-5">
+      <div class="hero-body ">
+        <p class="title is-1">
+          Blablablaaaa
+        </p>
+        <p class="subtitle">
+          Blablabla niké vos mères
+        </p>
+
+        <a href="#" class="button is-medium is-link">C'est parti !</a>
+      </div>
+
+      <!-- <figure>
+         <img src="@/assets/logo.png" />
+      </figure> -->
+    </section>
+
+    <section class="section has-background-light ">
+      <h1 class="has-text-centered title is-3">C'est quoi ?</h1>
+      <p class="has-text-centered">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </section>
+
+    <section class="section is-medium">
+      <h1  class="has-text-centered title is-3">Comment ça marche ?</h1>
+    </section>
+
+    <section class="section has-text-centered has-background-primary py-6">
+      <h1 class="title has-text-white pb-4">Démarrer sans plus attendre</h1>
+      <button class="button is-outlined">C'est parti !</button>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white">
+      <div class="content has-text-centered ">
+        <p>
+         Copyright © 2021 Ouistiti
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.navbar {
+  border-bottom: 1px solid lightgray;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.has-background-primary {
+  background-color: #42b983 !important;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+/* .has-background-dark {
+  background-color: #35495e!important;
+} */
 </style>
