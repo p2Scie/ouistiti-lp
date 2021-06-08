@@ -1,4 +1,4 @@
-# ouistiti-lp
+# app
 
 ## Project setup
 ```
