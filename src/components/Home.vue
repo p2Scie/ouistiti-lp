@@ -2,43 +2,50 @@
   <Hero></Hero>
 
   <section class="section is-medium container">
-    <h1 class="title is-1 has-text-centered mb-6">{{ title2 }}</h1>
+    <h1 class="title is-1 has-text-centered pb-6">{{ title2 }}</h1>
     <div class="columns is-multiline is-centered">
       <div class="column is-one-third is-narrow" :style="{ maxWidth: '398px' }">
         <figure class="image">
           <img src="@/assets/img/card1.png" alt="" />
         </figure>
         <p
-          v-html="lorem"
           :style="{ fontSize: '16px', fontWeight: '400' }"
           class="has-text-centered p-6"
-        ></p>
+        >
+          Je cherche mon lieu
+        </p>
       </div>
       <div class="column is-one-third is-narrow" :style="{ maxWidth: '398px' }">
         <figure class="image">
           <img src="@/assets/img/card2.png" alt="" />
         </figure>
         <p
-          v-html="lorem"
           :style="{ fontSize: '16px', fontWeight: '400' }"
           class="has-text-centered p-6"
-        ></p>
+        >
+          Je regarde les artistes et animations du lieu
+        </p>
       </div>
       <div class="column is-one-third is-narrow" :style="{ maxWidth: '398px' }">
         <figure class="image">
           <img src="@/assets/img/card3.png" alt="" />
         </figure>
         <p
-          v-html="lorem"
           :style="{ fontSize: '16px', fontWeight: '400' }"
           class="has-text-centered p-6"
-        ></p>
+        >
+          Je réserve mon lieu
+        </p>
       </div>
     </div>
   </section>
-
-  <section class="section is-medium container is-flex is-justify-content-center" :style="{margin: '0 auto!important'}"> 
+<div :style="{maxWidth: '650px', margin: '0 auto 6rem'}">
+    <section
+    class="section container is-flex is-justify-content-center iframeContainer"
+    :style="{ margin: '0 auto!important' }"
+  >
     <iframe
+      class="box"
       src="https://www.youtube.com/embed/RD9yCKck-QY"
       title="YouTube video player"
       frameborder="0"
@@ -46,6 +53,8 @@
       allowfullscreen
     ></iframe>
   </section>
+</div>
+
 
   <Form></Form>
   <Footer></Footer>
@@ -65,9 +74,7 @@ export default {
   },
   data() {
     return {
-      title2: "Processus en 3 étapes",
-      lorem:
-        "Lorem Ipsum <br> Enim velit, dui justo, quis enim ut egestas aenean.",
+      title2: "Comment faire ?",
     };
   },
 };
@@ -75,9 +82,21 @@ export default {
 
 <style scoped>
 iframe {
-    max-width: 100%;
+  /* max-width: 100%;
     height: auto;
-    width: 560px;
-    min-height: 315px;
+    width: 640px;
+    min-height: 360px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframeContainer {
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%;
+  padding-top: 56.25%; 
 }
 </style>

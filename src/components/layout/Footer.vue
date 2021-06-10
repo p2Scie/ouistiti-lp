@@ -5,15 +5,16 @@
         <img src="@/assets/img/logo_blanc.png" alt="" />
       </figure>
       <div class="social mb-5 has-text-white has-text-centered">
-        <span class="icon mx-4">
-          <i class="fab fa-facebook"></i>
-        </span>
-        <span class="icon mx-4">
-          <i class="fab fa-instagram"></i>
-        </span>
-        <span class="icon mx-4">
-          <i class="fab fa-twitter"></i>
-        </span>
+        <a href="#" target="_blank">
+          <span class="icon mx-4">
+            <i class="fab fa-linkedin"></i>
+          </span>
+        </a>
+        <a href="https://instagram.com/cspaceee?r=nametag" target="_blank">
+          <span class="icon mx-4">
+            <i class="fab fa-instagram"></i>
+          </span>
+        </a>
       </div>
 
       <p class="has-text-centered has-text-white">
@@ -24,13 +25,13 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                copyright: "© CÉ’SPACE, 2021. On fait des ravages !"
-            }
-        }
-    }
+export default {
+  data() {
+    return {
+      copyright: "© CÉ’SPACE, 2021. On fait des ravages !",
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -38,11 +39,15 @@
   background-color: #06d6a0;
 }
 p {
-    font-size: 15px;
-    line-height: 24px;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 img {
-    width: 360px;
+  width: 360px;
+}
+
+a {
+  color: inherit;
 }
 </style>
