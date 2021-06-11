@@ -1,17 +1,124 @@
 <template>
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <Home></Home>
+        <section class="hero container">
+    <div class="hero-body">
+      <div class="columns is-vcentered">
+        <div class="column is-three-fifths">
+          <figure class="image mb-6 pb-6">
+            <img
+              src="@/assets/img/logo.png"
+              alt=""
+              :style="{ width: '360px' }"
+            />
+          </figure>
+          <h1 class="title is-1 mb-6"> {{ title }}</h1>
+          <p class="subtitle mb-6">{{ subtitle }}</p>
+          <button class="button is-medium" @click="toggleModal">Voir notre video</button>
+        </div>
+        <div class="column is-hidden-touch">
+          <figure class="image">
+            <img src="@/assets/img/hero-pict.png" alt="" />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Modal v-if="revele" :revele="revele" :toggleModal="toggleModal">
+    
+  </Modal>
+  <button class="modal-close is-large" aria-label="close" @click="close"></button>
+  <section class="section is-medium container mb-0">
+    <h1 class="title is-1 has-text-centered pb-6">{{ title2 }}</h1>
+    <div class="columns is-multiline is-centered">
+      <div class="column is-one-third is-narrow" :style="{ maxWidth: '398px' }">
+        <figure class="image">
+          <img src="@/assets/img/card1.png" alt="" />
+        </figure>
+        <p
+          :style="{ fontSize: '16px', fontWeight: '400' }"
+          class="has-text-centered p-6"
+        >
+          Je cherche mon lieu
+        </p>
+      </div>
+      <div class="column is-one-third is-narrow" :style="{ maxWidth: '398px' }">
+        <figure class="image">
+          <img src="@/assets/img/card2.png" alt="" />
+        </figure>
+        <p
+          :style="{ fontSize: '16px', fontWeight: '400' }"
+          class="has-text-centered p-6"
+        >
+          Je regarde les artistes et animations du lieu
+        </p>
+      </div>
+      <div class="column is-one-third is-narrow" :style="{ maxWidth: '398px' }">
+        <figure class="image">
+          <img src="@/assets/img/card3.png" alt="" />
+        </figure>
+        <p
+          :style="{ fontSize: '16px', fontWeight: '400' }"
+          class="has-text-centered p-6"
+        >
+          Je réserve mon lieu
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- <div :style="{maxWidth: '650px', margin: '0 auto 6rem'}">
+    <section
+    class="section container is-flex is-justify-content-center iframeContainer"
+    :style="{ margin: '0 auto!important' }"
+  >
+    <iframe
+      class="box"
+      src="https://www.youtube.com/embed/RD9yCKck-QY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </section>
+</div> -->
+
+  <Form></Form>
+  <Footer></Footer>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Home from "@/components/Home.vue";
+import Footer from "./components/layout/Footer.vue";
+import Form from "./components/Form.vue";
+import Modal from "./components/Modal.vue";
 
 export default {
   name: "App",
   components: {
-    Home,
+    Footer,
+    Form,
+    Modal,
   },
+
+  data() {
+    return {
+      revele: false,
+      isModalVisible: false,
+      title: "Venez tout casser !",
+      subtitle:
+        "Découvrez des lieux, des histoires, des identités hors du commun. Puis proposez-les à vos clients afin de leur offrir une expérience insolite.",
+    }
+  },
+  methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      },
+      toggleModal(){
+        this.revele = !this.revele;
+      }
+    }
+  
 };
 </script>
 
@@ -30,7 +137,7 @@ export default {
   border-radius: 6px;
   border: none;
   color: #fff;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 p {
@@ -57,5 +164,29 @@ i {
 }
 .column {
   margin: 0 auto;
+}
+
+/* .mj-embedded-content, .paint-area {
+  box-shadow: none!important;
+} */
+
+iframe {
+  /* max-width: 100%;
+    height: auto;
+    width: 640px;
+    min-height: 360px; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+}
+
+.iframeContainer {
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%;
+  padding-top: 56.25%; 
 }
 </style>

@@ -1,61 +1,51 @@
 <template>
   <section class="section is-medium has-background-light">
-    <!-- <div class="container">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <p :style="{ fontSize: '25px', lineHeight: '50px' }">
-           Abonnez-vous à notre newsletter mensuel
-          </p>
-        </div>
-        <div class="column is-offset-2">
-          <form @submit.prevent="sendEmail">
-            <div class="field">
-              <div class="control">
-                <input
-                  class="input is-success"
-                  type="text"
-                  name="user_name"
-                  v-model="nameInput"
-                  placeholder="Prénom"
-                />
-              </div>
-            </div>
-            <div class="field">
-              <div class="control">
-                <input
-                v-model="emailInput"
-                  class="input is-success"
-                  type="email"
-                  name="user_email"
-                  placeholder="Adresse mail"
-                />
-              </div>
-            </div>
+    <!-- Begin Mailchimp Signup Form -->
 
-            <div class="field">
-              <div class="control">
-                <input
-                  type="submit"
-                  value="JE M'INSCRIS"
-                  class="button is-medium px-6"
-                  :style="{ fontWeight: '500' }"
-                />
-              </div>
-            </div>
-          </form>
+    <div id="mc_embed_signup">
+      <form
+        action="https://gmail.us6.list-manage.com/subscribe/post?u=37449d26a6239c7da66c01081&amp;id=c11efb904a"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        class="validate"
+        target="_blank"
+        novalidate
+      >
+        <div id="mc_embed_signup_scroll">
+          <label for="mce-EMAIL">Abonnez-vous à notre newsletter mensuel</label>
+          <input
+            type="email"
+            value=""
+            name="EMAIL"
+            class="email"
+            id="mce-EMAIL"
+            placeholder="email address"
+            required
+          />
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input
+              type="text"
+              name="b_37449d26a6239c7da66c01081_c11efb904a"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+          <div class="clear">
+            <input
+              type="submit"
+              value="Je m'inscrit"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="button is-medium"
+            />
+          </div>
         </div>
-      </div>
-    </div> -->
+      </form>
+    </div>
 
-    <iframe
-      class="mj-w-res-iframe"
-      frameborder="0"
-      scrolling="no"
-      marginheight="0"
-      marginwidth="0"
-      src="https://app.mailjet.com/widget/iframe/6S1w/Jwt"
-      width="100%"
-    ></iframe>
+    <!--End mc_embed_signup-->
   </section>
 </template>
 
@@ -98,5 +88,43 @@ export default {
 section {
   display: block;
   margin: 0 auto;
+}
+
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 800px;
+}
+
+#mc_embed_signup {
+  margin: 0 auto;
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+#mc-embedded-subscribe {
+  background: #06d6a0;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    
+}
+
+#mc_embed_signup input.button {
+  
+min-width: 150px;
+    min-height: 40px;
+}
+
+#mc_embed_signup label {
+  padding-bottom: 40px;
 }
 </style>

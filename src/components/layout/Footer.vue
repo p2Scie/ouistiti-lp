@@ -5,7 +5,7 @@
         <img src="@/assets/img/logo_blanc.png" alt="" />
       </figure>
       <div class="social mb-5 has-text-white has-text-centered">
-        <a href="#" target="_blank">
+        <a href="https://www.linkedin.com/in/c%C3%A9-space-a29691214/" target="_blank">
           <span class="icon mx-4">
             <i class="fab fa-linkedin"></i>
           </span>
