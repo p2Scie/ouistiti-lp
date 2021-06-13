@@ -4,7 +4,7 @@
 
     <div class="columns is-vcentered is-centered">
       <div class="column">
-        <h2 class="title has-text-centered">Rejoinds l'aventure !</h2>
+        <h2 class="title has-text-centered">Rejoins l'aventure !</h2>
       </div>
       <div class="column ">
         <div id="mc_embed_signup">
