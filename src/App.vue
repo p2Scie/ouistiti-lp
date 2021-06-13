@@ -5,9 +5,9 @@
         <div class="column is-three-fifths">
           <figure class="image mb-6 pb-6">
             <img
-              src="@/assets/img/logo.png"
+              src="@/assets/img/cespace_logo_couleur.png"
               alt=""
-              :style="{ width: '360px' }"
+              :style="{ width: '276px' }"
             />
           </figure>
           <h1 class="title is-1 mb-6"> {{ title }}</h1>
@@ -133,7 +133,7 @@ export default {
 }
 
 .button {
-  background: #06d6a0;
+  background: #BD6F6D;
   border-radius: 6px;
   border: none;
   color: #fff;
@@ -146,11 +146,11 @@ p {
 
 .is-success.input,
 .is-success.textarea {
-  border-color: #06d6a0;
+  border-color: #BD6F6D;
 }
 
 .input {
-  border: 2px solid #06d6a0;
+  border: 2px solid #BD6F6D;
   box-sizing: border-box;
   border-radius: 6px;
 }

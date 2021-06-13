@@ -2,17 +2,17 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <figure class="image mb-6">
-        <img src="@/assets/img/logo_blanc.png" alt="" />
+        <img src="@/assets/img/cespace_logo_blanc.png" alt="" />
       </figure>
       <div class="social mb-5 has-text-white has-text-centered">
-        <a href="https://www.linkedin.com/in/c%C3%A9-space-a29691214/" target="_blank">
-          <span class="icon mx-4">
-            <i class="fab fa-linkedin"></i>
-          </span>
-        </a>
         <a href="https://instagram.com/cspaceee?r=nametag" target="_blank">
           <span class="icon mx-4">
             <i class="fab fa-instagram"></i>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/c%C3%A9-space-a29691214/" target="_blank">
+          <span class="icon mx-4">
+            <i class="fab fa-linkedin"></i>
           </span>
         </a>
       </div>
@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #06d6a0;
+  background-color: #2B2B39;
 }
 p {
   font-size: 15px;
@@ -44,7 +44,7 @@ p {
 }
 
 img {
-  width: 360px;
+  width: 276px;
 }
 
 a {
