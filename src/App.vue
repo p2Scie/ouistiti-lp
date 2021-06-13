@@ -26,7 +26,6 @@
   <Modal v-if="revele" :revele="revele" :toggleModal="toggleModal">
     
   </Modal>
-  <button class="modal-close is-large" aria-label="close" @click="close"></button>
   <section class="section is-medium container mb-0">
     <h1 class="title is-1 has-text-centered pb-6">{{ title2 }}</h1>
     <div class="columns is-multiline is-centered">

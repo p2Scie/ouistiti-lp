@@ -19,6 +19,7 @@
 </div>
     </div>
     <button
+    
       class="modal-close is-large"
       aria-label="close"
       @click="toggleModal"
