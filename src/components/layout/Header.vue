@@ -33,6 +33,7 @@
       </div>
     </div>
   </nav>
+
 </template>
 
 <script>
@@ -40,10 +41,7 @@ export default {};
 </script>
 
 <style scoped>
-.navbar {
-  max-width: 1119px;
-  height: 75px;
-}
+
 
 .button {
   width: 189px;

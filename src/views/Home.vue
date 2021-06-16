@@ -1,4 +1,5 @@
 <template>
+
            <section class="hero container">
     <div class="hero-body">
       <div class="columns is-vcentered">
@@ -63,24 +64,24 @@
         </p>
       </div>
     </div>
+    
+
   </section>
 
   <Form></Form>
-  <Footer></Footer>
+
 </template>
 
 <script>
-
-
-import Footer from "@/components/layout/Footer.vue";
 import Form from "@/components/Form.vue";
 import Modal from "@/components/Modal.vue";
+// import Newsletter from "@/components/home/Newsletter.vue"
 
 export default {
       components: {
-    Footer,
     Form,
     Modal,
+    // Newsletter
   },
    data() {
     return {

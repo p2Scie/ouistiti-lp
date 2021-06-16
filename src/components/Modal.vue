@@ -9,7 +9,7 @@
   >
     <iframe
       class="box mt-6"
-      src="https://www.youtube.com/embed/J4Qp65N5d2I"
+      src="https://www.youtube.com/embed/NPPNocQZG2o"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
