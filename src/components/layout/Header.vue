@@ -22,7 +22,7 @@
       class="navbar-menu is-flex is-justify-content-space-around"
     >
       <div class="navbar-brand">
-        <router-link to="/" class="navbar-item">
+        <router-link to="/ouistiti-lp/" class="navbar-item">
           <img src="@/assets/img/logo-couleur-navbar.png" alt=""
         /></router-link>
         <a
