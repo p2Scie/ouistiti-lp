@@ -1,4 +1,9 @@
 module.exports = {
+
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/ouistiti-lp/'
+      : '/'
+  ,
   pages: {
     index: {
       // entry for the page
