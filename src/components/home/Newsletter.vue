@@ -1,47 +1,42 @@
 <template>
-  <section class="section is-medium has-background-dark">
-    <div class="columns is-vcentered is-centered">
-      <div class="column is-10">
-        <div class="box">
-          <!-- <img
-            src="../../assets/img/shape1-newsletter.svg"
-            alt=""
-            id="shape1"
-          /> -->
+  <section class="section container is-medium">
+    <div class="box is-shadowless p-6 is-flex">
+        <svg width="60" height="83" viewBox="0 0 60 83" fill="none" xmlns="http://www.w3.org/2000/svg" id="circle">
+<path d="M58.219 -15.3049C49.528 -59.621 6.55724 -88.5007 -37.7588 -79.8096C-82.0748 -71.1186 -110.954 -28.1478 -102.263 16.1682C-93.5724 60.4842 -50.6016 89.3639 -6.28564 80.6729C38.0304 71.9818 66.9101 29.0111 58.219 -15.3049Z" fill="#BD6F6D"/>
+</svg>
 
-          <svg
-            width="192"
-            height="192"
-            viewBox="0 0 192 192"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M176.219 80.2412C167.528 35.9252 124.557 7.04545 80.2412 15.7365C35.9252 24.4276 7.04551 67.3983 15.7366 111.714C24.4276 156.03 67.3984 184.91 111.714 176.219C156.03 167.528 184.91 124.557 176.219 80.2412Z"
-              fill="#BD6F6D"
-              id="shape1"
-            />
-          </svg>
-          <div class="columns inner">
-            <div class="column">
-              <p class="title">Abonnez-vous à notre newsletter</p>
-              <p class="subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-                eaque reprehenderit quas excepturi libero dignissimos molestiae
-                hic odit! Perferendis fugit quas cum illo ullam ducimus placeat
-                mollitia nobis repellendus odit.
-              </p>
-            </div>
-            <div class="column">
+      <div class="columns is-vcentered is-centered is-multiline">
+        <div class="column is-12-touch is-6-desktop">
+          <h3 class="title has-text-centered-touch">
+            Abonnez-vous à notre newsletter
+          </h3>
+          <p class="has-text-centered-touch">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum,
+            sit commodo et id diam, consequat, tortor gravida ac.
+          </p>
+        </div>
+        <div
+          class="column is-flex-desktop is-narrow is-align-items-center has-text-centered-touch is-7-touch"
+        >
+          
+            <p class="control has-icons-left has-icons-right">
               <input class="input" type="email" placeholder="Adresse mail" />
-
-              <div class="control">
-                <button class="button is-primary">Je m'abonne</button>
-              </div>
-            </div>
+              <span class="icon is-small is-left">
+                <i class="far fa-envelope fa-lg"></i>
+              </span>
+            </p>
+          
+          <div class="field">
+            <button class="button p-5 ml-2 has-weight-bold">
+              Je m'abonne
+            </button>
           </div>
         </div>
       </div>
+      <svg width="113" height="48" viewBox="0 0 113 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="ano">
+<path d="M89.6376 11.688C76.9501 2.54705 62.9571 -0.781369 47.6586 1.7027C32.3601 4.18675 20.1484 11.7719 11.0235 24.4582C2.38384 36.4663 -1.0431 49.6515 0.742641 64.0137L24.6453 60.1348C23.981 52.7379 25.9122 45.3428 30.1072 39.2206C36.3876 30.0778 45.4057 25.3578 57.1614 25.0604C61.8636 24.9408 66.5187 26.0319 70.6804 28.2292C80.8596 33.6132 86.817 41.6169 88.5527 52.2401L112.416 48.3688C109.916 33.0533 102.324 20.8264 89.6376 11.688Z" fill="#2B2B39"/>
+</svg>
+
     </div>
   </section>
 </template>
@@ -52,27 +47,23 @@ export default {};
 
 <style scoped>
 .box {
-  /* max-width: 1255px;
-  width: 100%;
-  height: 277px;
-  border-radius: 50px; */
   position: relative;
   background-color: #f8f1f0;
   border-radius: 41px;
-  /* overflow: hidden; */
+  min-height: 277px;
+  overflow: hidden;
 }
 
-svg#shape1 {
-  /* position: absolute;
-  left: 19.24%;
-  top: -50px;
-  transform: rotate(-101.1deg); */
-  position: absolute;
-  left: -6.9%;
-  right: 93.86%;
-  top: 34.64%;
-  bottom: 6.32%;
+svg#ano {
+    /* align-self: flex-end; */
+    position: absolute;
+    bottom: 0;
+    right: 6rem;
+}
 
-  transform: rotate(-101.1deg);
+svg#circle {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 </style>

@@ -1,21 +1,19 @@
 <template>
-  <Home></Home>
-    <!-- <Header></Header> -->
-    <!-- <router-view></router-view> -->
+  <!-- <Home></Home> -->
+    <Header></Header>
+    <router-view></router-view>
     <Footer></Footer>
     
 </template>
 
 <script>
-// import Header from "@/components/layout/Header.vue";
+import Header from "@/components/layout/Header.vue";
 import Footer from "@/components/layout/Footer.vue";
-import Home from "@/views/Home.vue"
 export default {
   name: "App",
   components: {
-    // Header,
-    Footer,
-    Home
+    Header,
+    Footer
   },
 };
 </script>
@@ -48,7 +46,7 @@ p {
 }
 
 .input {
-  border: 2px solid #bd6f6d;
+  /* border: 2px solid #bd6f6d; */
   box-sizing: border-box;
   border-radius: 6px;
 }
