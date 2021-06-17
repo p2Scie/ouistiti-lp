@@ -1,7 +1,7 @@
 <template>
-  
+  <Home></Home>
     <!-- <Header></Header> -->
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
     <Footer></Footer>
     
 </template>
@@ -9,11 +9,13 @@
 <script>
 // import Header from "@/components/layout/Header.vue";
 import Footer from "@/components/layout/Footer.vue";
+import Home from "@/views/Home.vue"
 export default {
   name: "App",
   components: {
     // Header,
-    Footer
+    Footer,
+    Home
   },
 };
 </script>
