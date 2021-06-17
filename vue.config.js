@@ -16,7 +16,7 @@ module.exports = {
     // template is inferred to be `public/subpage.html`
     // and falls back to `public/index.html` if not found.
     // Output filename is inferred to be `subpage.html`.
-    subpage: 'src/router/index.js'
+    subpage: 'src/main.js'
   }
  
   }

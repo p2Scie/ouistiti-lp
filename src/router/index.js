@@ -13,7 +13,8 @@ const router = createRouter({
         { path: '/article', component: Article },
         { path: '/contact', component: Contact },
     ],
-    linkActiveClass: 'active'
+    linkActiveClass: 'active',
+    base: '/ouistiti-lp/'
 });
 
 
