@@ -8,7 +8,7 @@ import Contact from '@/views/Contact.vue';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        { path: '/ouistiti-lp/', component: Home},
+        { path: '/', component: Home},
         { path: '/about', component: About },
         { path: '/article', component: Article },
         { path: '/contact', component: Contact },
