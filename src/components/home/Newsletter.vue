@@ -18,19 +18,47 @@
         <div
           class="column is-flex-desktop is-narrow is-align-items-center has-text-centered-touch is-7-touch"
         >
-          
+
+        <form action="https://gmail.us6.list-manage.com/subscribe/post?u=37449d26a6239c7da66c01081&amp;id=c11efb904a"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate is-flex"
+            target="_blank"
+            novalidate>
             <p class="control has-icons-left has-icons-right">
-              <input class="input" type="email" placeholder="Adresse mail" />
+              <input class="input email" type="email" placeholder="Adresse mail" value=""
+                    name="EMAIL"
+                    id="mce-EMAIL"
+                    required />
               <span class="icon is-small is-left">
                 <i class="far fa-envelope fa-lg"></i>
               </span>
             </p>
+
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div
+                style="position: absolute; left: -5000px;"
+                aria-hidden="true"
+              >
+                <input
+                  type="text"
+                  name="b_37449d26a6239c7da66c01081_c11efb904a"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
           
           <div class="field">
-            <button class="button p-5 ml-2 has-weight-bold">
-              Je m'abonne
-            </button>
+            <input type="submit" class="button ml-2 has-weight-bold" value="Je m'abonne" name="subscribe"
+                      id="mc-embedded-subscribe"/>
+             
+            
           </div>
+
+        </form>
+          
+
         </div>
       </div>
       <svg width="113" height="48" viewBox="0 0 113 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="ano">
