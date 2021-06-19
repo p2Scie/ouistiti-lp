@@ -1,7 +1,9 @@
 <template>
   <svg
+  id="headerVector"
     width="146"
     height="63"
+    class="is-hidden-touch"
     viewBox="0 0 146 63"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -11,75 +13,100 @@
       fill="#2B2B39"
     />
   </svg>
+<header>
+  <nav class="navbar container" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <router-link to="/" class="navbar-item">
+        <img src="@/assets/img/cespace_logo_couleur.png" alt="" />
+      </router-link>
 
-  <nav
-    class="navbar container mt-5 is-hidden-touch"
-    role="navigation"
-    aria-label="main navigation"
-  >
-    <div
-      id="navbarBasicExample"
-      class="navbar-menu is-flex is-justify-content-space-around"
-    >
-      <div class="navbar-brand">
-        <router-link to="/" class="navbar-item">
-          <img src="@/assets/img/logo-couleur-navbar.png" alt=""
-        /></router-link>
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="navbar">
-        <router-link to="/about" class="navbar-item mx-4">À propos</router-link>
-        <router-link to="/article" class="navbar-item mx-4"
-          >Articles</router-link
-        >
-        <router-link to="/contact" class="navbar-item mx-4"
-          >Contacts</router-link
-        >
-      </div>
+      <a
+      @click="toggleNav"
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasic"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-      <div class="navbar">
+    <div id="navbarBasic" class="navbar-menu" :class="isMobile ? 'is-active' : ''">
+      <div class="navbar-start"></div>
+
+      <div class="navbar-end">
+        <router-link to="/about" class="navbar-item">À propos</router-link>
+        <router-link to="/article" class="navbar-item">Articles</router-link>
+        <router-link class="navbar-item" to="/contact">Contacts</router-link>
         <div class="navbar-item">
           <a class="button">
-            <strong>M'inscrire</strong>
+            Se connecter
           </a>
         </div>
       </div>
     </div>
   </nav>
+</header>
+  
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isMobile: false,
+    }
+  },
+
+  methods: {
+    toggleNav() {
+      this.isMobile = !this.isMobile;
+    }
+  },
+};
 </script>
 
-<style scoped>
+<style lang="scss">
+.navbar {
+  min-height: 44px;
+}
 .button {
-  width: 189px;
-  height: 46px;
+  /* margin-left: 30px; */
   padding: 8px 40px;
   background: #bd6f6d;
-}
-/* #brand-logo {
-  margin-right: 151px;
-} */
-.navbar-item img {
-  max-height: 3rem;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  height: 36px;
 }
 
-svg {
+#subscribe {
+  font-size: 1.3rem;
+  font-family: CircularStd-Regular, sans-serif;
+  font-weight: 500;
+  color: #e5c5c5;
+}
+
+#headerVector {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 3.9rem;
 }
+
+.navbar-menu {
+  text-align: center;
+  .navbar-item {
+  font-size: 1.3rem;
+  font-family: CircularStd-Regular, sans-serif;
+  font-weight: 500;
+  color: #2b2b39;
+}
+}
+
+
 </style>

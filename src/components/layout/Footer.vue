@@ -4,50 +4,63 @@
       <figure class="image mb-6">
         <img src="@/assets/img/cespace_logo_blanc.png" alt="" />
       </figure>
-      <div class="social mb-5 has-text-white has-text-centered">
+      <div class="social">
         <a href="https://instagram.com/cspaceee?r=nametag" target="_blank">
-          <span class="icon mx-4">
+          <span class="icon">
             <i class="fab fa-instagram"></i>
           </span>
         </a>
-        <a href="https://www.linkedin.com/in/c%C3%A9-space-a29691214/" target="_blank">
-          <span class="icon mx-4">
+        <a
+          href="https://www.linkedin.com/in/c%C3%A9-space-a29691214/"
+          target="_blank"
+        >
+          <span class="icon">
             <i class="fab fa-linkedin"></i>
           </span>
         </a>
       </div>
 
-      <p class="has-text-centered has-text-white">
-        {{ copyright }}
+      <p>
+        © CÉ’SPACE, 2021. On fait des ravages !
       </p>
     </div>
   </footer>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      copyright: "© CÉ’SPACE, 2021. On fait des ravages !",
-    };
-  },
-};
+export default {};
 </script>
 
-<style scoped>
+<style lang="scss">
 .footer {
-  background-color: #2B2B39;
-}
-p {
-  font-size: 15px;
-  line-height: 24px;
-}
+  padding: 8.75rem 0 3rem;
+  background-color: #2b2b39;
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 276px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    font-family: CircularStd-Regular, sans-serif;
+    color: #fff;
+    font-size: 1.25rem;
+  }
 
-img {
-  width: 276px;
-}
-
-a {
-  color: inherit;
+  .social {
+    margin: 3.8rem 0;
+    text-align: center;
+    .icon {
+      font-size: 2rem;
+      color: #fff;
+      &:first-child {
+        margin-right: 2.25rem;
+      }
+    }
+  }
 }
 </style>
