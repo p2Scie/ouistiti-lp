@@ -24,7 +24,7 @@
             <figcaption>
               <span>Le 01/02/2021</span>
               <h3>Une oeuvre invisible ?</h3>
-              <p>LIEUX ATYPIQUES</p>
+              <p class="has-text-uppercase">Œuvres d’arts</p>
             </figcaption>
           </figure>
         </div>

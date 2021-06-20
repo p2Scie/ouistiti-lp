@@ -38,10 +38,10 @@
       <div class="navbar-start"></div>
 
       <div class="navbar-end">
-        <router-link to="/about" class="navbar-item">À propos</router-link>
-        <router-link to="/article" class="navbar-item">Articles</router-link>
-        <router-link class="navbar-item" to="/contact">Contacts</router-link>
-        <div class="navbar-item">
+        <router-link to="/about" class="navbar-item mx-5">À propos</router-link>
+        <router-link to="/article" class="navbar-item mx-5">Articles</router-link>
+        <router-link class="navbar-item mx-5" to="/contact">Contacts</router-link>
+        <div class="navbar-item ">
           <a class="button">
             Se connecter
           </a>
