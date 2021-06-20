@@ -1,6 +1,6 @@
 <template>
   <section class="section container px-0" id="hero">
-    <div class="columns">
+    <div class="columns is-desktop">
       <div class="column is-narrow">
         <div class="hero-text has-text-centered-touch">
           <h1 class="title">
@@ -85,5 +85,17 @@ export default {};
   font-family: CircularStd, sans-serif;
   font-weight: 450;
   color: #2b2b39;
+}
+@media (max-width: 1023px) {
+  .title {
+    margin-top: 3.5rem;
+  }
+  #section4 .column {
+    display: flex;
+    justify-content: center;
+  }
+  #section4 .columns {
+    margin: 0 auto;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
 
   <section class="section is-medium" id="section4">
     <h2 class="has-text-centered">
-      <span>• </span>Un peu de lecture ?<span> •</span>
+      <span class="dot">• </span>Un peu de lecture ?<span class="dot"> •</span>
     </h2>
     <div class="columns is-centered is-multiline is-variable is-5">
       <div class="column is-narrow">

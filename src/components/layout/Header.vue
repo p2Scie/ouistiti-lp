@@ -70,6 +70,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+.navbar-item img {
+    max-height: 32px;
+}
+
 .navbar {
   min-height: 44px;
 }
