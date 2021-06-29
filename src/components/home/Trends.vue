@@ -652,8 +652,8 @@ export default {};
 #trends {
       h2 {
     font-family: CeraPro-Black;
-    font-size: 4rem;
-    margin-bottom: 64px;
+    // font-size: 4rem;
+    // margin-bottom: 64px;
   }
 
   h4 {

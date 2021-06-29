@@ -1,0 +1,27 @@
+/* Typography */
+
+:root {
+    font-size: 16px;
+  --title-size-1: clamp(1.5rem, 0.62rem + 3.76vw, 4rem);
+  --title-size-2: clamp(1.8rem, 0.67rem + 4.81vw, 5rem);
+  --title-size-3: clamp(2.16rem, 0.72rem + 6.14vw, 6.25rem);
+  --title-size-4: clamp(3.11rem, 0.77rem + 10vw, 9.77rem);
+}
+
+$text-size-1: 1.5rem;
+$text-size-2: 1rem;
+$text-size-3: 0.875rem;
+$text-size-4: 0.75rem;
+
+/* Colors */
+$primary-color-1: #22222e;
+$primary-color-2: #40404d;
+$primary-color-3: #6b6b74;
+$primary-color-4: #bfbfc4;
+$primary-color-5: #ffffff;
+
+$secondary-color-1: #bd6f6d;
+$secondary-color-2: #e5c5c5;
+$secondary-color-3: #f8f1f0;
+$secondary-color-4: #975957;
+$secondary-color-5: #ca8c8a;

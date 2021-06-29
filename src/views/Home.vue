@@ -1,9 +1,10 @@
 <template>
+<main>
   <Hero></Hero>
   <InfoBlock></InfoBlock>
-  <Trends></Trends>
-  <Articles></Articles>
-  <Newsletter></Newsletter>
+  <!-- <Trends></Trends>
+  <Articles></Articles> -->
+  
 
   <!-- <Modal v-if="revele" :revele="revele" :toggleModal="toggleModal"> </Modal> -->
   <!-- <section class="section is-medium container mb-0">
@@ -48,27 +49,31 @@
   </section> -->
 
   <!-- <Form></Form> -->
+  </main>
+  <section>
+    <!-- <Newsletter></Newsletter> -->
+  </section>
 </template>
 
 <script>
 // import Form from "@/components/Form.vue";
 import Hero from "@/components/home/Hero.vue";
-import Articles from "@/components/home/Articles.vue";
+// import Articles from "@/components/home/Articles.vue";
 import InfoBlock from "@/components/home/InfoBlock.vue";
-import Trends from "@/components/home/Trends.vue";
+// import Trends from "@/components/home/Trends.vue";
 // import Review from "@/components/home/Review.vue";
 // import Modal from "@/components/Modal.vue";
-import Newsletter from "@/components/home/Newsletter.vue";
+// import Newsletter from "@/components/home/main/Newsletter.vue";
 
 export default {
   components: {
     // Form,
     // Modal,
-    Newsletter,
+    // Newsletter,
     Hero,
-    Articles,
+    // Articles,
     InfoBlock,
-    Trends,
+    // Trends,
     // Review,
   },
   data() {
@@ -93,5 +98,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss"></style>

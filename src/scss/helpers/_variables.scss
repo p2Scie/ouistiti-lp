@@ -1,1 +1,29 @@
-$bg-classroom: #cf3ce2;
+$font-size-base: 12px;
+
+/******* COLORS *******/
+
+// GLOBAL
+$hairlines: #bfbfc4;
+$bg-alert: #eaeaeb;
+
+// Light Mode - Default
+$bg-light: #fff;
+$title-color-light: #22222e;
+$text-color-light: #40404d;
+$subtitle-color-light: #6b6b74;
+$cta-active-color-light: #bd6f6d;
+$cta-disabled-color-light: #e5c5c5;
+$cta-border-color-light: #f8f1f0;
+$link-color-light: #975957;
+$illustration-color-light: #ca8c8a;
+
+//Dark Mode
+$bg-dark: #22222e;
+$title-color-dark: #fff;
+$text-color-dark: #eaeaeb;
+$subtitle-color-dark: #bfbfc4;
+$cta-active-color-dark: #d7a9a7;
+$cta-disabled-color-dark: #f8f1f0;
+$cta-border-color-dark: #f8f1f0;
+$link-color-dark: #e5c5c5;
+$illustration-color-dark: #d7a9a7;

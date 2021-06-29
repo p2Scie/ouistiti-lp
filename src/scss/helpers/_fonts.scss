@@ -1,29 +1,74 @@
 @font-face {
-    font-family: CeraPro-Black;
-    src: url(~@/assets/fonts/ceraPro/CeraPro-Black.ttf);
-  }
-  
-  @font-face {
-    font-family: CeraPro-Bold;
-    src: url(~@/assets/fonts/ceraPro/CeraPro-Bold.ttf);
-  }
-  
-  @font-face {
-    font-family: CeraPro-Regular;
-    src: url(~@/assets/fonts/ceraPro/CeraPro-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: CircularStd-Medium;
-    src: url(~@/assets/fonts/circular/CircularStd-Medium.ttf);
-  }
-  
-  @font-face {
-    font-family: CircularStd-Regular;
-    src: url(~@/assets/fonts/circular/CircularStd-Book.ttf);
-  }
-  
-  @font-face {
-    font-family: CircularStd-Bold;
-    src: url(~@/assets/fonts/circular/CircularStd-Bold.ttf);
-  }
+  font-family: "Cera Pro";
+  src: url(~@/assets/fonts/ceraPro/CeraPro-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url(~@/assets/fonts/ceraPro/CeraPro-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url(~@/assets/fonts/circular/CircularStd-Book.ttf) format("truetype");
+  font-weight: 450;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url(~@/assets/fonts/circular/CircularStd-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=320,24,1.2,1440,64,1.25,5,8,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+/* @link https://utopia.fyi/type/calculator?c=375,24,1.2,1440,64,1.25,5,7,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cera Pro", sans-serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: var(--title-size-1);
+}
+
+h2 {
+  font-size: var(--title-size-2);
+}
+
+h3 {
+  font-size: var(--title-size-3);
+}
+
+h4 {
+  font-size: var(--title-size-4);
+}
+
+p, .text {
+  font-size: 1rem;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 450;
+}
+
+p.lead {
+  font-size: $text-size-1;
+}
+
+p.small {
+  font-size: 14px;
+}
+
+p.captions {
+  font-size: 12px;
+  text-transform: uppercase;
+}

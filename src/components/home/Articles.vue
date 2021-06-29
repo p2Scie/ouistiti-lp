@@ -1,5 +1,4 @@
 <template>
-
   <section class="section is-medium" id="section4">
     <h2 class="has-text-centered">
       <span class="dot">• </span>Un peu de lecture ?<span class="dot"> •</span>
@@ -47,11 +46,11 @@
 
 <style lang="scss">
 #section4 {
-  h2 {
-    font-family: CeraPro-Black;
-    font-size: 4rem;
-    margin-bottom: 64px;
-  }
+  // h2 {
+  //   font-family: CeraPro-Black;
+  //   font-size: 4rem;
+  //   margin-bottom: 64px;
+  // }
 }
 .card {
   width: 273px;
@@ -82,11 +81,11 @@
       text-transform: uppercase;
       color: #bfbfc4;
     }
-    h3 {
-      font-family: CircularStd-Regular;
-      font-size: 16px;
-      margin: 24px 0;
-    }
+    // h3 {
+    //   font-family: CircularStd-Regular;
+    //   font-size: 16px;
+    //   margin: 24px 0;
+    // }
   }
 }
 
