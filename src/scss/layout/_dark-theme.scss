@@ -1,0 +1,67 @@
+*[data-theme="true"] { 
+    background-color: $primary-color-1;
+    transition: all .5s;
+
+    p, h1, h2, h3, h4, .navbar-link, .footer p {
+        color: $primary-color-5;
+    }
+    
+    .btn {
+        background-color:  $secondary-color-0;
+    }
+
+    #headerVector {
+        path {
+            fill: $primary-color-5;
+        }
+    }
+
+    .position {
+        background-color: $primary-color-1;
+    }
+    .navbar-brand svg, .footer svg, .newsletter #bottomVec  {
+        path {
+            fill: $primary-color-5;
+        }
+    }
+
+    #hero {
+        background-image: url('~@/assets/img/tg2.svg');
+    }
+
+    #info svg, .newsletter #topVec{
+        path {
+            fill: $secondary-color-0;
+        }
+    }
+
+    .dot {
+        color: $secondary-color-0;
+    }
+
+    .footer::before {
+        content: url(~@/assets/img/footer-line2.svg);
+    }
+
+    .footer article:last-child .icon {
+        color: $primary-color-5;
+    }
+
+    .newsletter {
+        .wrapper {
+            background-color: $primary-color-0;
+            form input {
+                background-color: #1E1E28;
+                &::placeholder {
+                    color: $primary-color-5;
+                }
+            }
+        }
+    }
+
+    #sideVec {
+        path {
+            fill: $primary-color-5;
+        }
+      }
+}

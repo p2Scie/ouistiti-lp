@@ -36,6 +36,7 @@ h3,
 h4 {
   font-family: "Cera Pro", sans-serif;
   font-weight: 900;
+  color: $primary-color-1;
 }
 
 h1 {
@@ -54,21 +55,24 @@ h4 {
   font-size: var(--title-size-4);
 }
 
-p, .text {
-  font-size: 1rem;
+p {
+  font-size: $text-size-2;
   font-family: "Circular Std", sans-serif;
   font-weight: 450;
+  color: $primary-color-1;
+  line-height: 1.25rem;
 }
 
 p.lead {
   font-size: $text-size-1;
+  line-height: 1.875rem;
 }
 
 p.small {
-  font-size: 14px;
+  font-size: $text-size-3;
 }
 
 p.captions {
-  font-size: 12px;
+  font-size: $text-size-4;
   text-transform: uppercase;
 }

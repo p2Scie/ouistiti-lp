@@ -1,6 +1,7 @@
 <template>
-  <section class="wrapper" id="info">
-    <article>
+  <section id="info">
+    <div class="wrapper">
+       <article>
       <span> <svg
           width="36"
           height="35"
@@ -13,8 +14,8 @@
             fill="#BD6F6D"
           />
         </svg></span>
-      <h3>Cherchez un lieu</h3>
-      <p>Via une sélection faite <br>spécialement pour vous</p>
+      <p class="lead">Cherchez</p>
+      <p>Une propriété via une sélection<br>faite spécialement pour vous</p>
     </article>
     <article>
       <span><svg
@@ -29,8 +30,8 @@
             fill="#BD6F6D"
           />
         </svg></span>
-      <h3>Trouvez votre bonheur</h3>
-      <p>Pour vos projets <br>et vos création</p>
+      <p class="lead">Trouvez</p>
+      <p>La perle rare grâce à notre<br>catalogue</p>
     </article>
     <article>
       <span><svg
@@ -45,36 +46,39 @@
               fill="#BD6F6D"
             />
           </svg></span>
-      <h3>Réservez</h3>
-      <p>Il ne vous reste plus qu’à <br>organiser votre évènement</p>
+      <p class="lead">Réservez</p>
+      <p>Avec notre agenda <br>afin de réaliser votre projet</p>
     </article>
+    </div>
+   
   </section>
 </template>
 
 <style lang="scss">
 #info {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  & > * {
+  padding: 5rem 2.5rem;
+  
+  .wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
-    flex-basis: 280px;
-    margin: 2rem;
+    .lead {
+      font-weight: 700;
+    }
+    
   }
 
-  svg {
-    margin-bottom: 0;
+  @media (max-width: 992px) {
+    .wrapper {
+      grid-auto-flow: row;
+      & > * {
+      margin: 2rem;
+    }
+    }
+    
   }
-  h3 {
-    margin: 8px 0 4px;
-    font-size: 24px;
-    font-family: CircularStd-Regular;
-    font-weight: 700;
-  }
-  p {
-    font-size: 16px;
-    font-weight: 450;
-    font-family: CircularStd-Regular;
-  }
+  
 }
 </style>

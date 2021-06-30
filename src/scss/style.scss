@@ -1,138 +1,21 @@
-@import "./_reset.scss";
-@import "./helpers/_base.scss";
-// @import "./_scale.scss";
-@import "./helpers/_fonts.scss";
+@import "./layout/_reset.scss";
+
 @import "./helpers/_variables.scss";
+@import "./helpers/_fonts.scss";
 @import "./helpers/_mixins.scss";
 
-.title {
-  color: $title-color-light;
-}
+
+@import "./components/_nav.scss";
+@import "./components/_button.scss";
+
+@import "./layout/_dark-theme.scss";
+
 .wrapper {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
 }
 
-.text {
-  color: $text-color-light;
-}
-.subtitle {
-  color: $subtitle-color-light;
-}
-.cta-active {
-  background-color: $cta-active-color-light;
-}
-.cta-disabled {
-  background-color: $cta-disabled-color-light;
-}
-.cta-border {
-  color: $cta-border-color-light;
-}
-.link {
-  color: $link-color-light;
-}
-.illustration {
-  color: $illustration-color-light;
-}
-#newsletter {
-  background-color: $text-color-light;
-}
 .dot {
-  color: $cta-active-color-light;
+  color: $secondary-color-1;
 }
-#color-mode {
-  background-color: $bg-dark;
-}
-
-p {
-  color: $bg-dark;
-}
-
-*[data-theme="true"] {
-  background-color: $bg-dark;
-  .title {
-    color: $title-color-dark;
-  }
-
-  .text {
-    color: $text-color-dark;
-  }
-  .subtitle {
-    color: $subtitle-color-dark;
-  }
-  .cta-active {
-    background-color: $cta-active-color-dark;
-  }
-  .cta-disabled {
-    background-color: $cta-disabled-color-dark;
-  }
-  .cta-border {
-    color: $cta-border-color-dark;
-  }
-  .link {
-    color: $link-color-dark;
-  }
-  .illustration {
-    color: $illustration-color-dark;
-  }
-  #newsletter {
-    background-color: $text-color-light;
-  }
-  .dot {
-    color: $cta-active-color-dark;
-  }
-  #color-mode {
-    background-color: $bg-light;
-  }
-  #hero svg path {
-    fill: $cta-active-color-dark;
-    stroke: $cta-active-color-dark;
-  }
-
-  #headerVector path,
-  #footer svg path {
-    fill: $bg-light;
-  }
-  p,
-  #footer i {
-    color: $bg-light;
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-// html {
-//   font-size: $font-size-base;
-// }
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.btn {
-  border: none;
-  min-width: 191px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  min-height: 48px;
-  padding: 14px 40px;
-  color: white;
-  cursor: pointer;
-}
-
-// .dot {
-//   color: $
-// }
