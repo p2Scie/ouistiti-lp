@@ -52,7 +52,6 @@
 
 <style lang="scss">
 .newsletter {
-  padding: 5rem 2.5rem;
   .wrapper {
     display: flex;
     justify-content: space-around;
@@ -69,6 +68,7 @@
     h3 {
       margin-bottom: 1rem;
     }
+
     .input {
       border: none;
       height: 48px;
@@ -109,6 +109,7 @@
       input {
         margin-bottom: 1rem;
       }
+      
       }
      
     }

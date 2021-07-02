@@ -16,10 +16,10 @@
         }
     }
 
-    .position {
-        background-color: $primary-color-1;
+    .position, .navbar-mobile {
+        background-color: $primary-color-1!important;
     }
-    .navbar-brand svg, .footer svg, .newsletter #bottomVec  {
+    .navbar-brand svg, .footer svg, .newsletter #bottomVec, .navbar-mobile svg  {
         path {
             fill: $primary-color-5;
         }
@@ -64,4 +64,6 @@
             fill: $primary-color-5;
         }
       }
+
+      
 }

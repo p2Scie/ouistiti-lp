@@ -56,8 +56,6 @@
 
 <style lang="scss">
 #info {
-  padding: 5rem 2.5rem;
-  
   .wrapper {
     display: grid;
     grid-auto-flow: column;

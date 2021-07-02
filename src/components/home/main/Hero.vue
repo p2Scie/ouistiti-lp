@@ -23,7 +23,6 @@ export default {};
   justify-content: center;
   align-items: center;
   min-height: 542px;
-  padding: 5rem 2.5rem;
   background-image: url('~@/assets/img/tg1.svg');
   background-repeat: no-repeat;
   background-position: right;
@@ -40,8 +39,9 @@ export default {};
   @media (max-width: 1024px) {
     min-height: auto;
     // .lead,
+    background: none!important;
     background-image: none;
-    .svg {
+    .svg, .lead {
       display: none;
     }
   }
