@@ -947,7 +947,7 @@
               </defs>
             </svg>
 
-            <p>Eglise</p>
+            <p>Maison</p>
           </article>
         </li>
         <li>
@@ -1418,7 +1418,7 @@
               </defs>
             </svg>
 
-            <p>Eglise</p>
+            <p>Château</p>
           </article>
         </li>
         <li>
@@ -1889,7 +1889,7 @@
               </defs>
             </svg>
 
-            <p>Eglise</p>
+            <p>Parc d'attractions</p>
           </article>
         </li>
         <li>
@@ -2360,7 +2360,7 @@
               </defs>
             </svg>
 
-            <p>Eglise</p>
+            <p>Hôpital</p>
           </article>
         </li>
         <li>
@@ -2831,7 +2831,7 @@
               </defs>
             </svg>
 
-            <p>Eglise</p>
+            <p>Phare</p>
           </article>
         </li>
       </ul>
@@ -2847,9 +2847,6 @@ export default {};
 
 .category {
   .wrapper {
-    h2 {
-      margin-bottom: 2rem;
-    }
     .categroy-list {
       display: flex;
       justify-content: space-around;
@@ -2859,6 +2856,9 @@ export default {};
       text-align: center;
       li {
           margin: 1rem;
+          p {
+              margin-top: 1rem;
+          }
       }
     }
   }
