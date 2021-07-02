@@ -38,12 +38,11 @@ export default {
   overflow: hidden;
 
   #fb-root {
-    display: none;
+    display: none!important;
   }
-
   [data-fb="true"] {
     #fb-root {
-    display: block;
+    display: block!important;
   }
   }
 }
