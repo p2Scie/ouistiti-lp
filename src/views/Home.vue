@@ -1,5 +1,5 @@
 <template>
-<h2>C'est l'APP</h2>
+<h2>C'est l'APP TEST</h2>
   <main>
     <Hero></Hero>
     <InfoBlock></InfoBlock>
