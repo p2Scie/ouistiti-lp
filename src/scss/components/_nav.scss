@@ -6,17 +6,17 @@
         color: $primary-color-0;
         position: relative;
     }
-    // .navbar-link.active {
-    //     &::after{
-    //         display: block;
-    //         position: absolute;
-    //         content: "•";
-    //         text-align: center;
-    //         width: 100%;
-    //         height: 100%;
-    //         color: $secondary-color-1;
-    //     }
-    // }
+    .navbar-link.active {
+        &::after{
+            display: block;
+            position: absolute;
+            content: "•";
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            color: $secondary-color-1;
+        }
+    }
     .navbar-link.disabled {
         color: $primary-color-4;
     }
