@@ -4,7 +4,7 @@
   
   /* Typography */
     font-size: 16px;
-  --title-size-1: clamp(1.50rem, 0.62rem + 3.76vw, 4.00rem);
+  --title-size-1: clamp(2.00rem, 1.30rem + 3.00vw, 4.00rem);
   --title-size-2: clamp(1.25rem, 0.63rem + 2.63vw, 3.00rem);
   --title-size-3: clamp(1.25rem, 0.90rem + 1.50vw, 2.25rem);
   --title-size-4: clamp(1.25rem, 1.16rem + 0.38vw, 1.50rem);
@@ -35,10 +35,11 @@
 
 
 
-$text-size-1: 1.5rem;
-$text-size-2: 1rem;
+$text-size-1: 1.5rem; //24px
+$text-size-2: 1rem; // 16px
 $text-size-3: 0.875rem;
 $text-size-4: 0.75rem;
+$text-size-5: 1.25rem; //20px
 
 /* Colors */
 $primary-color-0: #2B2B39;

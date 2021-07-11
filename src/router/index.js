@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-
 import Home from "@/views/Home.vue";
 import NotFound from "@/views/NotFound.vue";
+import Login from "@/views/Login.vue"
 // import AddPlace from "@/components/places/form/AddPlace.vue";
 // import PlacesList from "@/components/places/PlacesList.vue";
 // import PlaceDetail from "@/components/places/PlaceDetail.vue";
@@ -14,18 +14,14 @@ const router = createRouter({
     {
       path: "/",
       component: Home,
-      // children: [
-      //   {
-      //     path: "places",
-      //     component: PlacesList,
-      //     children: [
-      //       {
-      //         path: "add",
-      //         component: AddPlace,
-      //       },
-      //     ],
-      //   },
-      // ],
+      meta: {
+        authRequired: true
+      }
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: Login
     },
     // {
     //   path: "/add",
@@ -53,5 +49,6 @@ const router = createRouter({
   ],
   linkActiveClass: "active",
 });
+
 
 export default router;

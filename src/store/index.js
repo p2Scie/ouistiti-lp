@@ -1,5 +1,6 @@
 import { createStore } from "vuex";
 // import placesModule from './modules/places/index.js'
+import { v4 as uuidv4 } from "uuid";
 
 const store = createStore({
   state() {
@@ -47,7 +48,7 @@ const store = createStore({
           floor: 2,
           isFavorite: false,
         },
-      ]
+      ],
     };
   },
   getters: {
@@ -57,13 +58,17 @@ const store = createStore({
   },
   mutations: {
     addPlace(state, payload) {
-      state.places.push(payload)
-    }
+      state.places.push(payload);
+    },
+    setPlaces(state, payload) {
+      state.places = payload;
+    },
   },
   actions: {
-    addPlace(context, data) {
+    async addPlace(context, data) {
+      //génération d'un id random avec uuidv4
+      const placeId = uuidv4();
       const placeData = {
-        id: 'p4',
         name: data.name,
         type: data.type,
         description: data.description,
@@ -72,11 +77,56 @@ const store = createStore({
         floor: data.floor,
         area: data.area,
         capacity: data.capacity,
+      };
+      const response = await fetch(
+        `https://ce-space-default-rtdb.europe-west1.firebasedatabase.app/places/${placeId}.json`,
+        {
+          method: "PUT",
+          body: JSON.stringify(placeData),
+        }
+      );
+
+      // const responseData = await response.json();
+      if (!response.ok) {
+        //error ...
       }
 
-      context.commit('addPlace', placeData);
-    }
-  }
+      context.commit("addPlace", {
+        ...placeData,
+        id: placeId,
+      });
+    },
+    async loadPlaces(context) {
+      const response = await fetch(
+        'https://ce-space-default-rtdb.europe-west1.firebasedatabase.app/places.json'
+      );
+      const responseData = await response.json();
+
+      if (!response.ok) {
+        const error = new Error(responseData.message || "L'extraction des données a échoué");
+        throw error;
+      }
+
+      const places = [];
+      // formatage des données récupéré depuis firebase au bon format
+      for (const key in responseData) {
+        const place = {
+          id: key,
+          name: responseData[key].name,
+          type: responseData[key].type,
+          description: responseData[key].description,
+          availability: responseData[key].availability,
+          location: responseData[key].location,
+          floor: responseData[key].floor,
+          area: responseData[key].area,
+          capacity: responseData[key].capacity,
+        };
+        places.push(place);
+      }
+
+      context.commit('setPlaces', places)
+    },
+  },
 });
 
 export default store;

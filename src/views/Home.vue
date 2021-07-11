@@ -2,23 +2,46 @@
   <div v-if="showModal">
     <Modal @close="toggleModal"> </Modal>
   </div>
-  <button class="btn" @click="toggleModal">Open Modal</button>
+  <!-- <button class="btn" @click="toggleModal">Open Modal</button> -->
 
-  <main>
-    <div class="tabs">
-      <ul>
-        <li>
-          <a @click.prevent="setSelectedComponent('PlacesList')">
-            Lieux
-          </a>
-        </li>
-        <li>
-          <a @click.prevent="setSelectedComponent('ArtistsList')">Artists</a>
-        </li>
-      </ul>
+  <main class="main">
+    <div class="wrapper">
+      <article>
+        <ul>
+          <li><h1>Espace Admin <span class="dot"> •</span></h1></li>
+          <li> <p class="lead">1 lieux et 2 artistes.</p></li>
+        </ul>
+        
+       
+        <div class="controls">
+          <button class="btn-secondary">Ajouter un lieu</button>
+          <button class="btn-secondary">Ajouter un artist</button>
+        </div>
+      </article>
+
+      <!-- <div class="tabs">
+        <ul>
+          <li>
+            <a
+              @click.prevent="setSelectedComponent('PlacesList')"
+              :class="selectedComponent === 'PlacesList' ? 'active' : ''"
+            >
+              Catalogue Lieux
+            </a>
+          </li>
+          <li>
+            <a
+              @click.prevent="setSelectedComponent('ArtistsList')"
+              :class="selectedComponent === 'ArtistsList' ? 'active' : ''"
+              >Catalogue Artists</a
+            >
+          </li>
+        </ul>
+      </div> -->
+      <keep-alive>
+        <component :is="selectedComponent"> </component>
+      </keep-alive>
     </div>
-
-    <component :is="selectedComponent"> </component>
   </main>
 </template>
 
@@ -51,24 +74,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.tabs {
-  -webkit-overflow-scrolling: touch;
-  align-items: stretch;
+.main {
+  padding: var(--space-s-s) 2.5rem;
+  
+}
+main  article {
   display: flex;
-  font-size: 1rem;
+  flex-wrap: wrap;
   justify-content: space-between;
-  overflow: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
-  ul {
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: flex-start;
-    li {
-      cursor: pointer;
-    }
+  align-items: flex-start;
+  .controls button:first-child {
+    margin-right: 1rem;
   }
+}
+h1 {
+  margin-bottom: 2rem;
+}
+
+.lead {
+  color: $primary-color-3;
 }
 </style>

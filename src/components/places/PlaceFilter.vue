@@ -1,53 +1,92 @@
 <template>
-  <section>
-    <h3>Trouver votre lieu</h3>
-    <!-- <span class="filter-option">
-      <input type="checkbox" name="" id="all" checked @change="setFilter" />
-      <label for="all">Voir tout</label>
-    </span> -->
-
-    <span class="filter-option">
-      <input type="checkbox" name="" id="church" checked @change="setFilter" />
-      <label for="church">Église</label>
-    </span>
-
-    <span class="filter-option">
-      <input type="checkbox" name="" id="castle" checked @change="setFilter" />
-      <label for="castle">Château</label>
-    </span>
-
-    <span class="filter-option">
-      <input
-        type="checkbox"
-        name=""
-        id="hospital"
-        checked
-        @change="setFilter"
-      />
-      <label for="hospital">Hôpital</label>
-    </span>
-
-    <span class="filter-option">
-      <input type="checkbox" name="" id="house"  checked @change="setFilter" />
-      <label for="house">Maison</label>
-    </span>
-
-    <span class="filter-option">
-      <input type="checkbox" name="" id="park" checked @change="setFilter" />
-      <label for="park">Parc</label>
-    </span>
-
-    <span class="filter-option">
-      <input
-        type="checkbox"
-        name=""
-        id="lighthouse"
-        checked
-        @change="setFilter"
-      />
-      <label for="lighthouse">Phare</label>
-    </span>
-  </section>
+  <div class="tabs">
+    <ul>
+        <li>
+        <a class="filter-option">
+          <input
+            type="checkbox"
+            name=""
+            id="all"
+            
+            @change="setFilter"
+          />
+          <label for="all">Voir tout</label>
+        </a>
+      </li>
+      <li>
+        <a class="filter-option">
+          <input
+            type="checkbox"
+            name=""
+            id="church"
+            
+            @change="setFilter"
+          />
+          <label for="church">Église</label>
+        </a>
+      </li>
+      <li>
+        <a class="filter-option">
+          <input
+            type="checkbox"
+            name=""
+            id="castle"
+            
+            @change="setFilter"
+          />
+          <label for="castle">Château</label>
+        </a>
+      </li>
+      <li>
+        <a class="filter-option">
+          <input
+            type="checkbox"
+            name=""
+            id="hospital"
+            
+            @change="setFilter"
+          />
+          <label for="hospital">Hôpital</label>
+        </a>
+      </li>
+      <li>
+        <a class="filter-option">
+          <input
+            type="checkbox"
+            name=""
+            id="house"
+            
+            @change="setFilter"
+          />
+          <label for="house">Maison</label>
+        </a>
+      </li>
+      <li>
+        <a class="filter-option">
+          <input
+            type="checkbox"
+            name=""
+            id="park"
+            
+            @change="setFilter"
+          />
+          <label for="park">Parc</label>
+        </a>
+      </li>
+      <li>
+        <a class="filter-option">
+          <input
+            type="checkbox"
+            name=""
+            id="lighthouse"
+            
+            @change="setFilter"
+          />
+          <label for="lighthouse">Phare</label>
+        </a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -56,12 +95,13 @@ export default {
   data() {
     return {
       filters: {
-        church: true,
-        castle: true,
-        hospital: true,
-        house: true,
-        park: true,
-        lighthouse: true,
+        all: true,
+        church: false,
+        castle: false,
+        hospital: false,
+        house: false,
+        park: false,
+        lighthouse: false,
       },
     };
   },
@@ -82,3 +122,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+// input[type="checkbox"] {
+//   display: none;
+// }
+</style>

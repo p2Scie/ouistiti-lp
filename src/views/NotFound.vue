@@ -1,3 +1,3 @@
 <template>
-    <div></div>
+    <div> Page introuvable</div>
 </template>
