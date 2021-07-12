@@ -1,6 +1,6 @@
 *[data-theme="true"] { 
     background-color: $primary-color-1;
-    transition: all .5s;
+    // transition: all .5s;
 
     p, h1, h2, h3, h4, .navbar-link, .footer p {
         color: $primary-color-5;
@@ -25,11 +25,9 @@
         }
     }
 
-    #hero {
-        background-image: url('~@/assets/img/tg2.svg');
-    }
+  
 
-    #info svg, .newsletter #topVec{
+     .newsletter #topVec{
         path {
             fill: $secondary-color-0;
         }
