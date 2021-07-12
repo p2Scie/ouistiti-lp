@@ -139,8 +139,8 @@
         <ul class="footer-list">
           <li><p>Contactez-nous</p></li>
           <li><p>Gérer les cookies</p></li>
-          <li><p>Mentions légales</p></li>
-          <li><p>Politique de confidentialité</p></li>
+          <li><router-link to="/legal"><p>Mentions légales</p></router-link></li>
+          <li><router-link to="/privacy"><p>Politique de confidentialité</p></router-link></li>
         </ul>
       </article>
       <article>
