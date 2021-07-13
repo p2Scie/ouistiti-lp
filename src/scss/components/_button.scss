@@ -20,3 +20,16 @@
     cursor: pointer;
     background: none;
   }
+
+  .btn-secondary {
+    padding: .5em 1.5em;
+    background: $secondary-color-2;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: $primary-color-2;
+    font-family: Circular Std, sans-serif;
+    font-weight: 700;
+   span {
+     margin-right: .625em;
+   }
+  }
