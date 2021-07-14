@@ -34,7 +34,10 @@ export default {
 #app {
   overflow: hidden;
   margin: 0 auto;
-   
+   min-height: 100vh;
+   & > div {
+     min-height: 100vh;
+   }
 }
 
  

@@ -112,11 +112,20 @@ export default {
 
 *[data-theme="true"]  {
     .welcome {
-      background-image: url("~@/assets/img/illu-welcome-dark.svg");
-      background-color:  $primary-color-1;
+        @media (min-width: 992px){
+           background-image: url("~@/assets/img/illu-welcome-dark.svg");
+      
+        }
+     background-color:  $primary-color-1;
 
       .dot {
-        color: #fff;
+        color: #D7A9A7;;
+      }
+      h1, .tabs button.active {
+        color: #D7A9A7;
+      }
+      .tabs button.active {
+        border-bottom-color: #D7A9A7;
       }
     }
   }

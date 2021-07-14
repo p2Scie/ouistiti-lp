@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
 import Welcome from '@/views/Welcome.vue';
 import Catalog from '@/views/Catalog.vue';
-import Survey from '@/views/Survey.vue';
+import Discover from '@/views/Discover.vue';
 import store from '../store/index.js'
 
 
@@ -12,8 +12,8 @@ const router = createRouter({
     routes: [
         { path: '/', component: Welcome, meta: { requiresUnauth: true } },
         { path: '/home', component: Home, meta: { requiresAuth: true } },
-        { path: '/survey', component: Survey},
-        { path: '/catalog', component: Catalog},
+        { path: '/discover', component: Discover, meta: { requiresUnauth: true }},
+        { path: '/catalog', component: Catalog, meta: { requiresUnauth: true }},
        
     ],
     linkActiveClass: 'active'
