@@ -493,7 +493,7 @@
             >
           </li>
           <li>
-            <router-link to="/contact" class="navbar-link">Contacts</router-link>
+            <router-link to="/contact" class="navbar-link">Contact</router-link>
           </li>
         </ul>
         <ul>
@@ -545,7 +545,7 @@
               </span>
             </button>
           </li>
-          <li class="navbar-link">Connexion</li>
+          <li class="navbar-link"><a href="https://app.ce-space.fr">Connexion</a></li>
         </ul>
       </div>
     </nav>

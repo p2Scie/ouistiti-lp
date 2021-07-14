@@ -20,3 +20,27 @@
     cursor: pointer;
     background: none;
   }
+
+  .btn-primary {
+    padding: .5em 1.5em;
+    min-height: 3rem;
+    background: $secondary-color-1;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: $primary-color-5;
+    font-family: Circular Std, sans-serif;
+    font-weight: 700;
+  }
+
+  .btn-secondary {
+    padding: .5em 1.5em;
+    background: $secondary-color-2;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: $primary-color-2;
+    font-family: Circular Std, sans-serif;
+    font-weight: 700;
+   span {
+     margin-right: .625em;
+   }
+  }

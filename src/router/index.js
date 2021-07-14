@@ -13,7 +13,7 @@ const router = createRouter({
         { path: '/', component: Home},
         { path: '/pending', component: Pending},
         { path: '/about', component: About , redirect: '/pending'},
-        { path: '/contact', component: Contact , redirect: '/pending' },
+        { path: '/contact', component: Contact },
         { path: '/legal', component: LegalNotices},
         { path: '/privacy', component: PrivacyPolicy},
     ],
