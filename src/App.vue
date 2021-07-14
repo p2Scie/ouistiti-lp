@@ -19,6 +19,9 @@ export default {
       isDarkModeON: false,
     };
   },
+  created() {
+    this.$store.dispatch('tryLogin');
+  },
   methods: {
     switchMode() {
       this.isDarkModeON = !this.isDarkModeON;
@@ -31,5 +34,8 @@ export default {
 #app {
   overflow: hidden;
   margin: 0 auto;
+   
 }
+
+ 
 </style>

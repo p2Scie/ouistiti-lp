@@ -1,6 +1,7 @@
 <template>
   <main>
   
+  <h1>Bonjour, {{ getUsername }}</h1>
 <!-- <button class="btn" @click="setActiveStep('event')">Event</button>
 <button class="btn" @click="setActiveStep('place')">Place</button> -->
    <!-- <Event v-if="activeStep === 'step1'"></Event>
@@ -31,6 +32,11 @@ export default {
  methods: {
    setActiveStep(step) {
      this.activeStep = step;
+   }
+ },
+ computed: {
+   getUsername() {
+     return this.$store.getters.userName;
    }
  }
 }
