@@ -23,7 +23,7 @@
             personnelles de ses clients et partenaires, Cé'Space s'engage dans
             une démarche de protection de leurs données. L'entrée en vigueur de
             ce Règlement général sur la protection des données personnelles et
-            les contrôles de la CNIL sont l'occasion pour Passe moi l’sel de
+            les contrôles de la CNIL sont l'occasion pour Cé'Space de
             renforcer sa politique de protection des données personnelles.
             L'objectif atteint est la transparence sur le stockage des données,
             la préservation de leur confidentialité et leur sécurité.
@@ -33,7 +33,7 @@
             informe sur les process mis en place pour le traitement des données
             à caractère personnel des Utilisateurs qui sont en contact avec
             notre agence en ligne après les appels et le passage par notre site
-            internet www.passe-moi-lsel.fr .
+            internet www.ce-space.fr .
           </p>
           <p>
             “Une attention particulière est accordée par Cé'Spaceà la protection
@@ -51,8 +51,7 @@
         </li>
         <li>
           <h4>
-            Quelles sont les types de données personnelles collectées par Passe
-            moi l’sel et pour quelles finalités ?<span class="dot"> •</span>
+            Quelles sont les types de données personnelles collectées par Cé'Space et pour quelles finalités ?<span class="dot"> •</span>
           </h4>
           <p>
             L'article 6 du RGPD prévoit plusieurs cas de licéité du traitement
@@ -72,8 +71,7 @@
             contrats annexes.
           </p>
           <p>
-            Afin de mesurer la satisfaction des Utilisateurs des services Passe
-            moi l’sel, notre agence en ligne pourra vous demander de compléter
+            Afin de mesurer la satisfaction des Utilisateurs des services Cé'Space, notre agence en ligne pourra vous demander de compléter
             des enquêtes de satisfaction pour que vous puissiez laisser votre
             avis.
           </p>
@@ -131,7 +129,7 @@
             Cé'Space seront supprimées à l'issue d'une certaine période et selon
             les données traitées. Il est néanmoins possible de les supprimer
             avant sur demande envoyé par e-mail à l'adresse suivante :
-            passe.moi.lsel1@gmail.com.
+            oustiticompetitionb3@gmail.com.
           </p>
         </li>
         <li>
@@ -179,7 +177,7 @@
             Si vous avez des questions ou des réclamations ou si vous souhaitez
             faire part à Cé'Space de recommandations ou des commentaires visant
             à améliorer notre Politique de protection des données personnelles
-            vous pouvez envoyer un email à l'adresse passe.moi.lsel1@gmail.com
+            vous pouvez envoyer un email à l'adresse oustiticompetitionb3@gmail.com
             ou adresser un courrier à l'adresse suivante : 8 bis Rue de la
             Fontaine au Roi, 75011 Paris.
           </p>
